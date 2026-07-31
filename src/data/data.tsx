@@ -1,6 +1,5 @@
 import {
   AcademicCapIcon,
-  ArrowDownTrayIcon,
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
@@ -9,10 +8,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -23,8 +19,6 @@ import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -44,13 +38,11 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Scott Krech | Growth Systems Portfolio',
+  description:
+    'Scott Krech builds practical growth systems for small businesses — full-stack web apps, AI workflows, CRM automation, and marketing technology.',
 };
 
-/**
- * Section definition
- */
 export const SectionId = {
   Hero: 'hero',
   About: 'about',
@@ -69,31 +61,30 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Scott Krech.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a <strong className="text-stone-100">Growth Systems Developer</strong> and{' '}
+        <strong className="text-stone-100">Marketing Technology Specialist</strong> based in Charlotte, NC — building
+        practical full-stack tools, AI workflows, and customer-facing systems for small businesses.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        20+ years of independent consulting, now shipped as working software: intake systems, review funnels, AI
+        coaching platforms, and follow-up automation that are{' '}
+        <strong className="text-stone-100">live and in daily use</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
-    {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
+      primary: true,
+    },
+    {
+      href: `#${SectionId.Portfolio}`,
+      text: 'View Work',
       primary: false,
     },
   ],
@@ -104,16 +95,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I build practical growth systems for small businesses — websites, forms, funnels, automations, AI-assisted reports, and follow-up workflows. I combine marketing strategy, copywriting, UX judgment, and hands-on technical implementation across the full project lifecycle from architecture to production deployment. Most marketers can't build. Most builders don't think like marketers. I do both.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Charlotte, NC', Icon: MapIcon},
+    {label: 'Experience', text: '20+ years', Icon: CalendarIcon},
+    {label: 'Focus', text: 'Growth Technology', Icon: SparklesIcon},
+    {label: 'Available for', text: 'Contract / Full-time', Icon: BuildingOffice2Icon},
+    {label: 'GitHub', text: 'scottkrech-prog', Icon: AcademicCapIcon},
+    {label: 'Deployments', text: 'Railway · GitHub · Vercel', Icon: FlagIcon},
   ],
 };
 
@@ -122,71 +111,39 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Frontend Development',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      {name: 'React / TypeScript', level: 9},
+      {name: 'Tailwind CSS', level: 9},
+      {name: 'HTML5 / CSS3', level: 10},
+      {name: 'Next.js / Vite', level: 7},
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Backend Development',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      {name: 'Node.js / Express', level: 9},
+      {name: 'PostgreSQL', level: 8},
+      {name: 'Python 3', level: 7},
+      {name: 'PHP', level: 7},
     ],
   },
   {
-    name: 'Backend development',
+    name: 'AI & Automation',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      {name: 'AI Workflow Design', level: 9},
+      {name: 'GEO / AI Search', level: 8},
+      {name: 'n8n / GoHighLevel', level: 7},
+      {name: 'OpenAI API', level: 7},
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Marketing Technology',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      {name: 'CRM Architecture', level: 9},
+      {name: 'UTM Attribution', level: 9},
+      {name: 'Local SEO', level: 8},
+      {name: 'Conversion Copywriting', level: 9},
     ],
   },
 ];
@@ -196,111 +153,135 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'ACE WorkAuth',
+    description:
+      'Full customer intake-to-job system for an auto body shop. Intake form → digital signature → drop-off scheduling → admin Kanban board. React/TS, Node/Express, PostgreSQL, SMTP. Live at ace.workauth.org.',
+    url: 'https://ace.workauth.org',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'LeaveAReview.co',
+    description:
+      'Reputation management SaaS for small businesses. QR/NFC tap-to-review flow, branded pages, private feedback routing, admin generator, Google OAuth, and auto-reply cron. PHP + MySQL multi-client system.',
+    url: 'https://leaveareview.co',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Elevait Life',
+    description:
+      'Full AI life coaching platform — 11 phase-based AI chat modules, habit tracker, journal, SMS reminders, Square payments, AWS S3, n8n automation, and complete admin panel. React/TS + tRPC + Drizzle ORM.',
+    url: 'https://github.com/scottkrech-prog',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'GEO — AI Search Toolkit',
+    description:
+      'Generative Engine Optimization toolkit. Python citability scorer (0–100) for AI citation readiness, 5 AI agent definitions, 6 Schema.org templates, llms.txt generator, brand scanner, and PDF report generator.',
+    url: 'https://github.com/scottkrech-prog',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'CART-IQ',
+    description:
+      'Shared household grocery PWA with barcode scanning (ZXing), OpenAI receipt parsing, push notifications, multi-profile support, and service worker offline mode. The only project with a full Jest automated test suite.',
+    url: 'https://github.com/scottkrech-prog',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Roof-M-All',
+    description:
+      'Conversion-first roofing website with Node/Express + Railway PostgreSQL lead API, 50+ pages, 10 geographic SEO landing pages, Schema.org JSON-LD calculator, and Python image pipeline (Pillow, 3-tier WebP).',
+    url: 'https://roof-m-all-production.up.railway.app',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Roof-M-All WorkAuth',
+    description:
+      'Digital work authorization system for a roofing contractor — same architecture as ACE WorkAuth but configured for roofing, with Google Sheets API (service account), node-cron follow-up scheduler, and Python PDF generation.',
+    url: 'https://github.com/scottkrech-prog',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Ad Budget Builder',
+    description:
+      'Interactive prospect ad budget calculator deployed on Railway. Two-page flow: internal builder + shareable client plan page. Evergreen roofing example pre-loaded. Mobile responsive with share links.',
+    url: 'https://ad-budget-builder-production.up.railway.app',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Growth Systems Portfolio',
+    description:
+      'This portfolio site — premium dark-mode design built with pure HTML/CSS/JS. CSS custom property design token system, glassmorphism nav, radial gradient backgrounds, responsive bento grid. Deployed on Railway.',
+    url: 'https://krech-personal-production.up.railway.app/career-portfolio/',
     image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2000 – Present',
+    location: 'Self-directed / Real-world implementation',
+    title: 'Growth Technology & Marketing Operations',
+    content: (
+      <p>
+        20+ years of independent consulting and hands-on technical implementation. Built production systems across
+        React/TypeScript, Node.js, PostgreSQL, Python, PHP, AI APIs, and cloud deployment. Every skill earned on
+        real client projects.
+      </p>
+    ),
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'Ongoing',
+    location: 'Continuous learning',
+    title: 'AI Implementation & GEO',
+    content: (
+      <p>
+        Generative Engine Optimization, AI workflow design, citability scoring, LLM prompt engineering, AI agent
+        architecture, and AI-assisted business automation. Actively building and shipping AI-powered tools.
+      </p>
+    ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '2024 – Present',
+    location: 'Charlotte, NC',
+    title: 'Independent Growth Systems Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Building full-stack business tools for small businesses: ACE WorkAuth (auto body intake + job management
+        system), Roof-M-All WorkAuth (roofing work authorization), LeaveAReview.co (reputation SaaS), CART-IQ
+        (household PWA with AI receipt parsing), Elevait Life (AI coaching platform), and GEO toolkit. All
+        deployed to production and in active use.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2022 – 2024',
+    location: 'Charlotte, NC',
+    title: 'Marketing Technology & Automation Consultant',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Built conversion-first websites with lead capture APIs, UTM attribution schemas, and CRM integration
+        architecture. Designed AI chat widget knowledge bases, 3-phase migration plans, and geographic SEO
+        campaigns for local home-service businesses. Python automation scripts for image pipelines, QA linting,
+        and phone-number rotation.
+      </p>
+    ),
+  },
+  {
+    date: '2000 – 2022',
+    location: 'Charlotte, NC',
+    title: 'Independent Marketing Consultant',
+    content: (
+      <p>
+        20+ years of direct-response marketing, copywriting, offer design, funnel strategy, and client consulting
+        for small businesses across multiple verticals. Developed expertise in customer psychology, conversion
+        optimization, and marketing systems before transitioning to hands-on technical implementation.
       </p>
     ),
   },
@@ -313,19 +294,14 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Client Testimonial',
+      text: 'Scott built our entire intake and job management system from scratch. Customers sign on their phones, we see everything in the admin dashboard, and the drop-off scheduling just works. It replaced a paper-based process completely.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Consulting Client',
+      text: 'What makes Scott different is that he thinks in business outcomes first, then builds the technical solution. Most developers build what you ask for. Scott builds what you actually need.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
 };
@@ -333,30 +309,25 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description:
+    'Available for contract work, full-time roles, and consulting engagements. Best fit for marketing technology, growth operations, AI implementation, and full-stack development.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'scottkrech@gmail.com',
+      href: 'mailto:scottkrech@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Charlotte, NC',
+      href: 'https://www.google.com/maps/place/Charlotte,+NC',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'scottkrech-prog',
+      href: 'https://github.com/scottkrech-prog',
     },
   ],
 };
@@ -365,9 +336,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/scottkrech-prog'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://linkedin.com/in/scottkrech'},
 ];
