@@ -7,7 +7,6 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
@@ -324,11 +323,6 @@ export const contact: ContactSection = {
       text: 'Charlotte, NC',
       href: 'https://www.google.com/maps/place/Charlotte,+NC',
     },
-    {
-      type: ContactType.Github,
-      text: 'scottkrech-prog',
-      href: 'https://github.com/scottkrech-prog',
-    },
   ],
 };
 
@@ -336,6 +330,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/scottkrech-prog'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://linkedin.com/in/scottkrech'},
 ];
