@@ -59,18 +59,26 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Scott Krech.`,
+  name: `Hey, it's Scott Krech!`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Growth Systems Developer</strong> and{' '}
-        <strong className="text-stone-100">Marketing Technology Specialist</strong> based in Charlotte, NC — building
-        practical full-stack tools, AI workflows, and customer-facing systems for small businesses.
+        I help busy business owners turn broken/outdated systems/marketing into revenue--FAST.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        20+ years of independent consulting, now shipped as working software: intake systems, review funnels, AI
-        coaching platforms, and follow-up automation that are{' '}
-        <strong className="text-stone-100">live and in daily use</strong>.
+        <strong className="text-stone-100">How?</strong>
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I audit and map what's broken, then build what should have existed two years ago (working software, AI
+        workflows, automations that run withOUT a babysitter: -)
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        <strong className="text-stone-100">Step 1:</strong> Together we identify &amp; build the systems that STOP
+        revenue leaks and quickly claw-back bleeding revenue.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        <strong className="text-stone-100">Step 2:</strong> We work to pick the low-hanging fruit (i.e. revenue)
+        most folks walk by EVERY day.
       </p>
     </>
   ),
