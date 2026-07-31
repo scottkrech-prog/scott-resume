@@ -156,6 +156,14 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  // Row 1
+  {
+    title: 'Elevait Life',
+    description:
+      'Full AI life coaching platform — 11 phase-based AI chat modules, habit tracker, journal, SMS reminders, Square payments, AWS S3, n8n automation, and complete admin panel. React/TS + tRPC + Drizzle ORM.',
+    url: 'https://github.com/scottkrech-prog',
+    image: porfolioImage3,
+  },
   {
     title: 'ACE WorkAuth',
     description:
@@ -170,34 +178,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://leaveareview.co',
     image: porfolioImage2,
   },
-  {
-    title: 'Elevait Life',
-    description:
-      'Full AI life coaching platform — 11 phase-based AI chat modules, habit tracker, journal, SMS reminders, Square payments, AWS S3, n8n automation, and complete admin panel. React/TS + tRPC + Drizzle ORM.',
-    url: 'https://github.com/scottkrech-prog',
-    image: porfolioImage3,
-  },
-  {
-    title: 'GEO — AI Search Toolkit',
-    description:
-      'Generative Engine Optimization toolkit. Python citability scorer (0–100) for AI citation readiness, 5 AI agent definitions, 6 Schema.org templates, llms.txt generator, brand scanner, and PDF report generator.',
-    url: 'https://github.com/scottkrech-prog',
-    image: porfolioImage4,
-  },
-  {
-    title: 'CART-IQ',
-    description:
-      'Shared household grocery PWA with barcode scanning (ZXing), OpenAI receipt parsing, push notifications, multi-profile support, and service worker offline mode. The only project with a full Jest automated test suite.',
-    url: 'https://github.com/scottkrech-prog',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Roof-M-All',
-    description:
-      'Conversion-first roofing website with Node/Express + Railway PostgreSQL lead API, 50+ pages, 10 geographic SEO landing pages, Schema.org JSON-LD calculator, and Python image pipeline (Pillow, 3-tier WebP).',
-    url: 'https://roof-m-all-production.up.railway.app/index.html',
-    image: porfolioImage6,
-  },
+  // Row 2
   {
     title: 'Evergreen Roofing — Prospect Mockup',
     description:
@@ -211,6 +192,28 @@ export const portfolioItems: PortfolioItem[] = [
       'Conversion-first homepage mockup built for RDK Auto Body as a prospect deliverable — password-gated Node/Express preview server demonstrating design and CTA direction.',
     url: 'https://rdk-auto-body-mock-production.up.railway.app/',
     image: porfolioImage9,
+  },
+  {
+    title: 'Roof-M-All',
+    description:
+      'Conversion-first roofing website with Node/Express + Railway PostgreSQL lead API, 50+ pages, 10 geographic SEO landing pages, Schema.org JSON-LD calculator, and Python image pipeline (Pillow, 3-tier WebP).',
+    url: 'https://roof-m-all-production.up.railway.app/index.html',
+    image: porfolioImage6,
+  },
+  // Row 3
+  {
+    title: 'GEO — AI Search Toolkit',
+    description:
+      'Generative Engine Optimization toolkit. Python citability scorer (0–100) for AI citation readiness, 5 AI agent definitions, 6 Schema.org templates, llms.txt generator, brand scanner, and PDF report generator.',
+    url: 'https://github.com/scottkrech-prog',
+    image: porfolioImage4,
+  },
+  {
+    title: 'CART-IQ',
+    description:
+      'Shared household grocery PWA with barcode scanning (ZXing), OpenAI receipt parsing, push notifications, multi-profile support, and service worker offline mode. The only project with a full Jest automated test suite.',
+    url: 'https://github.com/scottkrech-prog',
+    image: porfolioImage5,
   },
 ];
 
