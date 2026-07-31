@@ -14,7 +14,6 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import profilepic from '../images/profilepic.jpg';
@@ -198,13 +197,6 @@ export const portfolioItems: PortfolioItem[] = [
       'Conversion-first roofing website with Node/Express + Railway PostgreSQL lead API, 50+ pages, 10 geographic SEO landing pages, Schema.org JSON-LD calculator, and Python image pipeline (Pillow, 3-tier WebP).',
     url: 'https://roof-m-all-production.up.railway.app/index.html',
     image: porfolioImage6,
-  },
-  {
-    title: 'Roof-M-All WorkAuth',
-    description:
-      'Digital work authorization system for a roofing contractor — same architecture as ACE WorkAuth but configured for roofing, with Google Sheets API (service account), node-cron follow-up scheduler, and Python PDF generation.',
-    url: 'https://github.com/scottkrech-prog',
-    image: porfolioImage7,
   },
   {
     title: 'Evergreen Roofing — Prospect Mockup',
