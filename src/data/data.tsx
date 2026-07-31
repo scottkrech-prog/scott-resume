@@ -191,7 +191,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Roof-M-All',
     description:
       'Conversion-first roofing website with Node/Express + Railway PostgreSQL lead API, 50+ pages, 10 geographic SEO landing pages, Schema.org JSON-LD calculator, and Python image pipeline (Pillow, 3-tier WebP).',
-    url: 'https://roof-m-all-production.up.railway.app',
+    url: 'https://roof-m-all-production.up.railway.app/index.html',
     image: porfolioImage6,
   },
   {
@@ -202,17 +202,17 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage7,
   },
   {
-    title: 'Ad Budget Builder',
+    title: 'Evergreen Roofing — Prospect Mockup',
     description:
-      'Interactive prospect ad budget calculator deployed on Railway. Two-page flow: internal builder + shareable client plan page. Evergreen roofing example pre-loaded. Mobile responsive with share links.',
-    url: 'https://ad-budget-builder-production.up.railway.app',
+      'Above-the-fold homepage mockup for Evergreen Roofing Charlotte — a password-gated prospect sales tool showing conversion-first design direction before client engagement.',
+    url: 'https://evergreen-roofing-mock-production.up.railway.app/',
     image: porfolioImage8,
   },
   {
-    title: 'Growth Systems Portfolio',
+    title: 'RDK Auto Body — Prospect Mockup',
     description:
-      'This portfolio site — premium dark-mode design built with pure HTML/CSS/JS. CSS custom property design token system, glassmorphism nav, radial gradient backgrounds, responsive bento grid. Deployed on Railway.',
-    url: 'https://krech-personal-production.up.railway.app/career-portfolio/',
+      'Conversion-first homepage mockup built for RDK Auto Body as a prospect deliverable — password-gated Node/Express preview server demonstrating design and CTA direction.',
+    url: 'https://rdk-auto-body-mock-production.up.railway.app/',
     image: porfolioImage9,
   },
 ];
