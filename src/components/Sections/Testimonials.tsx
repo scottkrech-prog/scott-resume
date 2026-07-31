@@ -24,8 +24,8 @@ const Testimonials: FC = memo(() => {
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {VIDEO_IDS.map(({id, name}) => (
             <div
-              key={id}
               className="overflow-hidden rounded-2xl border border-[#252a3d] bg-[#171923]"
+              key={id}
               style={{boxShadow: '0 16px 48px rgba(0,0,0,0.4)'}}>
               <div className="relative w-full" style={{paddingBottom: '56.25%'}}>
                 <iframe
