@@ -1,5 +1,4 @@
 import {
-  AcademicCapIcon,
   BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
@@ -100,8 +99,7 @@ export const aboutData: About = {
     {label: 'Experience', text: '20+ years', Icon: CalendarIcon},
     {label: 'Focus', text: 'Growth Technology', Icon: SparklesIcon},
     {label: 'Available for', text: 'Contract / Full-time', Icon: BuildingOffice2Icon},
-    {label: 'GitHub', text: 'scottkrech-prog', Icon: AcademicCapIcon},
-    {label: 'Deployments', text: 'Railway · GitHub · Vercel', Icon: FlagIcon},
+    {label: 'Deployments', text: 'Railway · Vercel', Icon: FlagIcon},
   ],
 };
 
