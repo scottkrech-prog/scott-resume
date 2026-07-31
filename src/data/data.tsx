@@ -291,14 +291,34 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'Client Testimonial',
-      text: 'Scott built our entire intake and job management system from scratch. Customers sign on their phones, we see everything in the admin dashboard, and the drop-off scheduling just works. It replaced a paper-based process completely.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Justin Brooke',
+      text: '"Scott Krech is an AMAZING copywriter."',
+      image: '/testimonials/dunJAgv1No8.jpg',
     },
     {
-      name: 'Consulting Client',
-      text: 'What makes Scott different is that he thinks in business outcomes first, then builds the technical solution. Most developers build what you ask for. Scott builds what you actually need.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'David Dutton',
+      text: '"Scott Krech gave me one idea that might grow my biz 40%."',
+      image: '/testimonials/_83W6d33OJQ.jpg',
+    },
+    {
+      name: 'Tim Paulson',
+      text: '"Scott Krech is one of my Marketing Secret Weapons."',
+      image: '/testimonials/Zw4HAPh9wLw.jpg',
+    },
+    {
+      name: 'Scott Smith',
+      text: '"Scott Krech produces some of the best copy and marketing materials I\'ve ever seen."',
+      image: '/testimonials/Nl2D6dLBMb0.jpg',
+    },
+    {
+      name: 'Paul Halme',
+      text: '"Scott Krech gave me a HUGE paradigm shift!"',
+      image: '/testimonials/DR2235YB3RM.jpg',
+    },
+    {
+      name: 'Aaron O\'Sullivan',
+      text: 'Video testimonial — see the full playlist for Scott\'s client results.',
+      image: '/testimonials/diX_J4YjHPo.jpg',
     },
   ],
 };
@@ -313,8 +333,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'scottkrech@gmail.com',
-      href: 'mailto:scottkrech@gmail.com',
+      text: 'scottkrech [at] gmail [dot] com',
+      href: '#contact',
     },
     {
       type: ContactType.Location,
