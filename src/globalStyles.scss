@@ -2,25 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  /* Chrome, Safari and Opera */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+/* ── Roof-M-All palette tokens ───────────────────────────────── */
+:root {
+  --dark:      #11121a;
+  --dark-2:    #171923;
+  --dark-3:    #202331;
+  --nav-bg:    #0d1020;
+  --nav-line:  #252a3d;
+  --blue:      #2878f1;
+  --blue-hover:#1f69da;
+  --blue-soft: #9bbcff;
+  --ink:       #101116;
+  --paper:     #ffffff;
+  --soft:      #f5f5f7;
+  --line:      #e6e7ec;
+  --muted:     #6f7280;
+  --cta:       #2878f1;
+  --cta-hover: #1f69da;
+  --shadow:    0 28px 80px rgba(12,14,23,.22);
+}
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 
 @supports (-webkit-touch-callout: none) {
-  .h-screen {
-    height: -webkit-fill-available;
-  }
+  .h-screen { height: -webkit-fill-available; }
 }
 
-/* Global styles */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,17 +48,26 @@ html {
 body {
   position: relative;
   width: 100%;
-  color: #444444;
+  color: #e2e8f0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif;
-  background-color: #fafafa;
+  background-color: var(--dark);
 }
 
-td,
-th {
-  padding: 4px 8px 4px 4px;
-  text-align: left;
+/* Skills progress bars — RMA blue */
+[class*="bg-orange"] {
+  background-color: var(--blue) !important;
+}
+[class*="border-orange"] {
+  border-color: var(--blue) !important;
+}
+[class*="text-orange"] {
+  color: var(--blue-soft) !important;
 }
 
-th {
-  font-weight: 600;
+/* Section alternating backgrounds */
+section:nth-child(even) {
+  background-color: var(--dark-2);
 }
+
+td, th { padding: 4px 8px 4px 4px; text-align: left; }
+th { font-weight: 600; }

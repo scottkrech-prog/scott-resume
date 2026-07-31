@@ -21,7 +21,7 @@ const Hero: FC = memo(() => {
           src={imageSrc}
         />
         <div className="z-10  max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-gray-800/40 p-6 text-center shadow-lg backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-y-6 rounded-xl bg-[#0d1020]/70 p-6 text-center shadow-lg backdrop-blur-sm border border-[#252a3d]">
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl">{name}</h1>
             {description}
             <div className="flex gap-x-4 text-neutral-100">
@@ -31,8 +31,8 @@ const Hero: FC = memo(() => {
               {actions.map(({href, text, primary, Icon}) => (
                 <a
                   className={classNames(
-                    'flex gap-x-2 rounded-full border-2 bg-none px-4 py-2 text-sm font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                    primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white',
+                    'flex gap-x-2 rounded-full border-2 px-4 py-2 text-sm font-medium text-white ring-offset-[#0d1020] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base transition-opacity',
+                    primary ? 'border-[#2878f1] bg-[#2878f1] ring-[#2878f1]' : 'bg-none border-white ring-white',
                   )}
                   href={href}
                   key={text}>
